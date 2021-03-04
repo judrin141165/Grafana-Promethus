@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prmotheuspod
+  labels:
+    components: promotheus
+
+spec:
+  containers:
+    - name: prmotheus
+      image: prom/prometheus
+
+      ports:
+        - containerPort: 3050
+
+
